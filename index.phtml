@@ -5,3 +5,36 @@
  * Date: 18.03.16
  * Time: 22:29
  */
+
+?>
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Кредитный калькулятор</title>
+    </head>
+    <body>
+        <form name="calc" action="index.php" method="get">
+        <b><h2>Сумма покупки:</b></h2>
+            <input type="text" style="font-size: 20px" size="18" pattern="^[ 0-9]+$" maxlength=15 placeholder="Введите число" name="summa"
+            autofocus required> грн.
+        <br><br>
+        <h2><b>Выбирите первоначальный взнос в процентах:</b></h2>
+            <input type="text" style="font-size: 20px" size="18" maxlength=15 placeholder="Введите число" name="vznos" required>%
+        <h2><b>Срок кредитования:</b></h2><br>
+        <select name=srok style="font-size: 20px" size="1" required>
+            <option value="1" selected>1 год</option>
+            <option value="2">2 года</option>
+            <option value="3">3 года</option>
+            <option value="4">4 года</option>
+            <option value="5">5 лет</option>
+            <option value="6">6 лет</option>
+            <option value="7">7 лет</option>
+        </select>
+            <br><br><br><br><br><br><br>
+  <p><input type="submit" style="font-size: 40px" value="Расчитать">
+   <input type="reset" style="font-size: 40px" value="Очистить"></p>
+ </form>
+ </body>
+</html>
